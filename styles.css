@@ -1,0 +1,75 @@
+/* Load the font locally */
+@font-face {
+    font-family: 'Somar Rounded';
+    src: url('./fonts/SomarRounded-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Somar Rounded', Arial, sans-serif;
+    background-color: #ECF8FF; /* Light background */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.stopwatch-container {
+    background-color: white;
+    padding: 40px; /* Increased padding for more space inside */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 450px; /* Increased width for better spacing */
+    height: 350px; /* Added height for more balance */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #FF7F1C; /* Primary blue color */
+    font-size: 36px; /* Increased font size */
+}
+
+.timer {
+    font-size: 64px; /* Increased font size for the timer */
+    margin-bottom: 20px;
+    color: #05ACFF; /* Matches primary color */
+}
+
+.buttons button {
+    font-size: 24px; /* Increased button font size */
+    padding: 15px 25px; /* Slightly larger padding for bigger buttons */
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+#startButton {
+    background-color: #056FEC; /* Primary blue */
+}
+
+#startButton:hover {
+    background-color: #B1D1E6; /* Lighter blue hover effect */
+}
+
+#stopButton {
+    background-color: #FF7F1C; /* Orange */
+}
+
+#stopButton:hover {
+    background-color: #ff0303; /* Red hover effect */
+}
+
+#resetButton {
+    background-color: #FFD700; /* Golden yellow */
+}
+
+#resetButton:hover {
+    background-color: #e2d89e; /* Light yellow hover effect */
+}
